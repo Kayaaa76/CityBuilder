@@ -27,11 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 1
-<<<<<<< Updated upstream
   resolvedPath: C:\Users\fb693\OneDrive\Documents\GitHub\CityBuilder\CityBuilder\Library\PackageCache\com.unity.collab-proxy@2.0.5
-=======
-  resolvedPath: C:\Users\fb693\OneDrive\Documents\GitHub\CityBuilder\CityBuilder\Library\PackageCache\com.unity.collab-proxy@2.0.4
->>>>>>> Stashed changes
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
