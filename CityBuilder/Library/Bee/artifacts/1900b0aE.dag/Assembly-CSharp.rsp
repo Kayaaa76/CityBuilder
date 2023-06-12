@@ -363,6 +363,7 @@
 "Assets/Scripts/Building.cs"
 "Assets/Scripts/BuildingDatabase.cs"
 "Assets/Scripts/BuildingObject.cs"
+"Assets/Scripts/DataManager.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/ObstacleObject.cs"
 "Assets/Scripts/ResourceManager.cs"

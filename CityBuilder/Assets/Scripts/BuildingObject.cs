@@ -7,8 +7,12 @@ public class BuildingObject : MonoBehaviour
 {
     public Building data;
 
-    [Header("Resource Generation")]
+    [Header("Building Level")]
+    [Space(8)]
+    public float buildinglevel = 0;
 
+
+    [Header("Resource Generation")]
     [Space(8)]
 
     //resource created by building
