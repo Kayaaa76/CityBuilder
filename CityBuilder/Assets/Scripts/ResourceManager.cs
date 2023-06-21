@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
-public class ResourceManager : MonoBehaviour
+public class ResourceManager : MonoBehaviour, IDataPersistence
 {
     [Header("Resources")]
 
@@ -46,6 +47,26 @@ public class ResourceManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.Wood = data.wood;
+        //this.stone = data.stone;
+        //this.metal = data.metal;
+        //this.energy = data.energy;
+        //this.standardCurr = data.standardCurr;
+        //this.premiumCurr = data.premiumCurr;
+    }
+
+    public void SaveData(ref GameData data) 
+    {
+        data.wood = this.Wood;
+        //data.stone = this.stone;
+        //data.metal = this.metal;
+        //data.energy = this.energy;
+        //data.standardCurr = this.standardCurr;
+        //data.premiumCurr= this.premiumCurr;
     }
 
     private void Update()

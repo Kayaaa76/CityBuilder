@@ -15,11 +15,44 @@ public class DataManager : MonoBehaviour
     {
         instance = this;
     }
-    public void AddItem(GameObject gameobj)
-    {
-    }
+    //public void AddItem(GameObject gameobj)
+    //{
+    //    Item item = new Item();
+    //    item.PrefabID = Builder.Instance.SelectedObject;
+    //    item.ItemID = item.PrefabID + ItemDB.items.Count + ToString();
+    //    gameobj.name = item.ItemID;
+    //    item.Position = gameobj.transform.position;
+    //    ItemDB.items.Add(item);
+    //}
 
+    //public void RemoveItem(string itemId)
+    //{
+    //    Item item -ItemDB.items.Where(p => p.ItemID == itemId).First();
+    //    ItemDB.items.Remove(item);
+    //}
 
+    //public void SaveData()
+    //{
+    //    XmlSerializer xmlSerializer = new XmlSerializer(typeof(BuildingDatabase));
+    //    FileStream stream = new FileStream(Application.dataPath + "/StreamFiles/Game_data.xml", FileMode.Create);
+    //    xmlSerializer.Serialize(stream, BuildingDatabase.Instance);
+    //    stream.Close();
+    //}
+
+    //void LoadData()
+    //{
+    //    if (!File.Exists(Application.dataPath + "/StreamFiles/Game_data.xml")) return;
+    //    XmlSerializer xmlSerializer = new XmlSerializer(typeof(BuildingDatabase));
+    //    FileStream stream = new FileStream(Application.dataPath + "/StreamFiles/Game_data.xml", FileMode.Open);
+    //    BuildingDatabase.Instance = xmlSerializer.Deserialize(stream) as BuildingDatabase;
+    //    stream.Close();
+
+    //    foreach (Building building in BuildingDatabase.Instance.buildingDatabase)
+    //    {
+    //        GameObject go = Instantiate(buildingToPlace.RequestBuildingPrefab(building.buildingID), buildingToPlace.transform.position, Quaternion.identity);
+    //        go.name = building.buildingID.ToString();
+    //    }
+    //}
 
 }
 [System.Serializable]
@@ -31,7 +64,7 @@ public class ItemDB
 [System.Serializable]
 public class Item
 {
-    public string Name;
-    public string Description;
+    public string PrefabID;
+    public string ItemID;
     public Vector3 Position;
 }

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -42,7 +44,7 @@ public class GameManager : MonoBehaviour
     //Debug method (selected building)
     public BuildingObject buildingToPlace;
 
-    public static GameManager Instance;
+    public static GameManager Instance { get; set; }
 
     private void Awake()
     {
@@ -52,7 +54,6 @@ public class GameManager : MonoBehaviour
     {
         CreateLevel();
     }
-
 
     ///<summary>
     ///Create grid depending on player level width & length
@@ -188,9 +189,6 @@ public class GameManager : MonoBehaviour
         float sumX = 0;
         float sumZ = 0;
 
-        //Vector3 position = new Vector3(tile.xPos, tileEndHeight, tile.zPos);
-
-
         //Sum value of X pos of all tiles
         //Sum value of Z pos of all tiles
         for (int i = 0; i < tiles.Count; i++) 
@@ -202,12 +200,9 @@ public class GameManager : MonoBehaviour
             //Debug.Log("placed building in" + tiles[i].xPos + " - " + tiles[i].zPos);
             
         }
-
         Vector3 position = new Vector3((sumX/tiles.Count), building.data.yPadding, (sumZ/tiles.Count));
 
         spawnedBuilding.transform.position = position;
-
-
     }
 
     public void SelectBuilding(int id)

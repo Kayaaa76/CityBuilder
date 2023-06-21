@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,6 @@ public class BuildingObject : MonoBehaviour
     [Header("Building Level")]
     [Space(8)]
     public float buildinglevel = 0;
-
 
     [Header("Resource Generation")]
     [Space(8)]
@@ -45,11 +45,14 @@ public class BuildingObject : MonoBehaviour
         {
             IncreaseMaxStorage();
             canvasObject.SetActive(false);
-            
         }
-
-        
     }
+
+    //public GameObject RequestBuildingPrefab(int buildingID)
+    //{
+    //    Building buildingDatabase = BuildingDatabase.Instance.buildingDatabase.Where(p => p.buildingID == buildingID).First();
+    //    return buildingDatabase.buildingModel;
+    //}
 
     private void OnMouseDown()
     {
@@ -111,5 +114,4 @@ public class BuildingObject : MonoBehaviour
         progressSlider.value = current;
         progressSlider.maxValue = maxValue; 
     }
-
 }
