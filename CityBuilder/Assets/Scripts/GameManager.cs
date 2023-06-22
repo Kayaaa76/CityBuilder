@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IDataPersistence
 {
     [Header("Builder")]
 
@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     //Debug method (selected building)
     public BuildingObject buildingToPlace;
+    public Vector3 buildingPos;
 
     public static GameManager Instance { get; set; }
 
@@ -54,6 +55,17 @@ public class GameManager : MonoBehaviour
     {
         CreateLevel();
     }
+
+    public void LoadData(GameData data)
+    {
+        buildingPos = data.buildingPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.buildingPosition = buildingPos;
+    }
+
 
     ///<summary>
     ///Create grid depending on player level width & length
@@ -200,9 +212,9 @@ public class GameManager : MonoBehaviour
             //Debug.Log("placed building in" + tiles[i].xPos + " - " + tiles[i].zPos);
             
         }
-        Vector3 position = new Vector3((sumX/tiles.Count), building.data.yPadding, (sumZ/tiles.Count));
+        buildingPos = new Vector3((sumX/tiles.Count), building.data.yPadding, (sumZ/tiles.Count));
 
-        spawnedBuilding.transform.position = position;
+        spawnedBuilding.transform.position = buildingPos;
     }
 
     public void SelectBuilding(int id)

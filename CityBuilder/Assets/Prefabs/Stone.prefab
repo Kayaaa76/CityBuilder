@@ -118,5 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc29d6f3599ab2b49b976a9925a438f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: c6d8e7a2-2bf7-4e82-a8d3-3a69ff668871
   obstacleType: 1
   resourceAmount: 10

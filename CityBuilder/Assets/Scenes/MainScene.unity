@@ -1923,6 +1923,7 @@ MonoBehaviour:
   xBounds: 3
   zBounds: 3
   buildingToPlace: {fileID: 0}
+  buildingPos: {x: 0, y: 0, z: 0}
 --- !u!114 &743489022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,7 +1991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf9f8740cd30bf4fb4db1714265ee01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: 
+  fileName: data.game
+  useEncryption: 1
 --- !u!1 &770153702
 GameObject:
   m_ObjectHideFlags: 0

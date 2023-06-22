@@ -12,6 +12,10 @@ public class GameData
     public int standardCurr;
     public int premiumCurr;
 
+    public Vector3 buildingPosition;
+
+    public SerializableDictionary<string, bool> obstacleObjectCollected;
+
     public GameData()
     {
         this.wood = 0;
@@ -20,5 +24,9 @@ public class GameData
         this.energy = 0;
         this.standardCurr = 0;
         this.premiumCurr = 0;
+
+        buildingPosition = Vector3.zero;
+
+        obstacleObjectCollected = new SerializableDictionary<string, bool>();   
     }
 }

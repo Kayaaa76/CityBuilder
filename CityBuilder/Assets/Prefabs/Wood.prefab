@@ -120,3 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc29d6f3599ab2b49b976a9925a438f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: cf420c9d-5944-4825-81ee-508115a9f967
+  obstacleType: 0
+  resourceAmount: 10
