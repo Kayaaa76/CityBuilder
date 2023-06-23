@@ -4,13 +4,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuildingObject : MonoBehaviour
+public class BuildingObject : MonoBehaviour, IDataPersistence
 {
     public Building data;
-
-    [Header("Building Level")]
-    [Space(8)]
-    public float buildinglevel = 0;
 
     [Header("Resource Generation")]
     [Space(8)]
@@ -48,11 +44,15 @@ public class BuildingObject : MonoBehaviour
         }
     }
 
-    //public GameObject RequestBuildingPrefab(int buildingID)
-    //{
-    //    Building buildingDatabase = BuildingDatabase.Instance.buildingDatabase.Where(p => p.buildingID == buildingID).First();
-    //    return buildingDatabase.buildingModel;
-    //}
+    public void LoadData(GameData data)
+    {
+
+    }
+
+    public void SaveData(ref GameData data)
+    {
+
+    }
 
     private void OnMouseDown()
     {

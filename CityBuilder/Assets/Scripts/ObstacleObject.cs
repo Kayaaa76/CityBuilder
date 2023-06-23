@@ -84,7 +84,6 @@ public class ObstacleObject : MonoBehaviour, IDataPersistence
     {
         refTile = obj;
     }
-
     
     public enum ObstacleType
     {

@@ -52,21 +52,21 @@ public class ResourceManager : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         this.Wood = data.wood;
-        //this.stone = data.stone;
-        //this.metal = data.metal;
-        //this.energy = data.energy;
-        //this.standardCurr = data.standardCurr;
-        //this.premiumCurr = data.premiumCurr;
+        this.Stone = data.stone;
+        this.Metal = data.metal;
+        this.Energy = data.energy;
+        this.StandardCurr = data.standardCurr;
+        this.PremiumCurr = data.premiumCurr;
     }
 
     public void SaveData(ref GameData data) 
     {
         data.wood = this.Wood;
-        //data.stone = this.stone;
-        //data.metal = this.metal;
-        //data.energy = this.energy;
-        //data.standardCurr = this.standardCurr;
-        //data.premiumCurr= this.premiumCurr;
+        data.stone = this.Stone;
+        data.metal = this.Metal;
+        data.energy = this.Energy;
+        data.standardCurr = this.StandardCurr;
+        data.premiumCurr = this.PremiumCurr;
     }
 
     private void Update()

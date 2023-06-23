@@ -8,6 +8,9 @@ public class Building
     //Building ID for ref exact type of building.
     public int buildingID;
 
+    //Building Level
+    public int buildinglevel = 0;
+
     //width X axis
     public int width = 0;
 
