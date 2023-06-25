@@ -42,16 +42,17 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
             IncreaseMaxStorage();
             canvasObject.SetActive(false);
         }
+        
     }
 
-    public void LoadData(GameData data)
+    public void LoadData(GameData gameData)
     {
-
+        data.buildinglevel = gameData.buildingLevel;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(ref GameData gameData)
     {
-
+        gameData.buildingLevel = data.buildinglevel;
     }
 
     private void OnMouseDown()
@@ -87,6 +88,15 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
                 break;
             case Building.StorageType.Stone:
                 ResourceManager.Instance.IncreaseMaxStone((int)resource);
+                break;
+        }
+    }
+
+    void BuildingLevel()
+    {
+        switch (data.buildinglevel)
+        {
+            case 1:
                 break;
         }
     }

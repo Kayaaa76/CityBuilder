@@ -5,8 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameData 
 {
-    public int objectLevel;
-
+    public int buildingLevel;
     public int wood;
     public int stone;
     public int metal;
@@ -20,7 +19,7 @@ public class GameData
 
     public GameData()
     {
-        objectLevel = 0;
+        this.buildingLevel = 0;
         this.wood = 0;
         this.stone = 0;
         this.metal = 0;
