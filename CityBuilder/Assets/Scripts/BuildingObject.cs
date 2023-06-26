@@ -89,6 +89,12 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
             case Building.StorageType.Stone:
                 ResourceManager.Instance.IncreaseMaxStone((int)resource);
                 break;
+            case Building.StorageType.Metal:
+                ResourceManager.Instance.IncreaseMaxMetal((int)resource);
+                break;
+            case Building.StorageType.Energy:
+                ResourceManager.Instance.IncreaseMaxEnergy((int)resource);
+                break;
         }
     }
 
@@ -97,6 +103,8 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
         switch (data.buildinglevel)
         {
             case 1:
+                break;
+            case 2:
                 break;
         }
     }

@@ -127,7 +127,7 @@ public class ResourceManager : MonoBehaviour, IDataPersistence
 
     public void IncreaseMaxStone(int amount)
     {
-        maxWood += amount;
+        maxStone += amount;
         UIManager.Instance.UpdateStoneUI(Stone, maxStone);
     }
 
@@ -152,6 +152,12 @@ public class ResourceManager : MonoBehaviour, IDataPersistence
         }  
     }
 
+    public void IncreaseMaxMetal(int amount)
+    {
+        maxMetal += amount;
+        UIManager.Instance.UpdateMetalUI(Metal, maxMetal);
+    }
+
     /// <summary>
     /// Adds more energy to the inventory
     /// </summary>
@@ -170,6 +176,12 @@ public class ResourceManager : MonoBehaviour, IDataPersistence
         {
             return false;
         }
+    }
+
+    public void IncreaseMaxEnergy(int amount)
+    {
+        maxWood += amount;
+        UIManager.Instance.UpdateEnergyUI(Energy, maxEnergy);
     }
 
     /// <summary>

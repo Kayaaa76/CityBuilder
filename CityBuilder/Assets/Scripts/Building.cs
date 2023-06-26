@@ -47,4 +47,15 @@ public class Building
         Metal,
         Energy
     }
+
+    public enum BuildingType
+    {
+        None,
+        Wall,
+        TownHall,
+        Producer,
+        Tower,
+        Armoury,
+        HeroesAltar
+    }
 }
