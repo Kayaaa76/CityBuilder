@@ -20,6 +20,8 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
     //Speed that the resource generate
     public float generationSpeed = 0.25f;
 
+    public float levelMultiplier;
+
 
     [Header("UI")]
     [Space(8)]

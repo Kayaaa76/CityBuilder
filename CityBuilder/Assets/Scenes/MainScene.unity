@@ -757,9 +757,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 701494444}
   - {fileID: 1233482892}
   - {fileID: 1062639974}
-  - {fileID: 701494444}
   m_Father: {fileID: 1181606912}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1851,6 +1851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingDatabase:
   - buildingID: 1
+    buildinglevel: 0
     width: 1
     length: 1
     yPadding: 0
@@ -1861,6 +1862,7 @@ MonoBehaviour:
     refOfBuilding: {fileID: -6736273647446626698, guid: bb2c56fbfe59db149a6e8b7ff06c76fd,
       type: 3}
   - buildingID: 2
+    buildinglevel: 0
     width: 2
     length: 2
     yPadding: 0
@@ -1871,6 +1873,7 @@ MonoBehaviour:
     refOfBuilding: {fileID: -3073004440172262100, guid: b0a6b556893267d40b0b1bb5045d697c,
       type: 3}
   - buildingID: 3
+    buildinglevel: 0
     width: 2
     length: 3
     yPadding: 1
@@ -1893,7 +1896,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &743489021
 MonoBehaviour:
@@ -3723,7 +3726,7 @@ RectTransform:
   m_Children:
   - {fileID: 216886301}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
