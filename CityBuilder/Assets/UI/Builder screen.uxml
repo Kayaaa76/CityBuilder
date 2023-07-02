@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ResourceContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100px; width: 1900px; position: absolute; left: 10px;" />
+    <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 150px; flex-basis: auto; align-items: auto; justify-content: space-around; width: 500px; align-self: flex-end; position: absolute; bottom: 0;" />
+</ui:UXML>
