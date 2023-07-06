@@ -9,7 +9,7 @@ public class Building
     public int buildingID;
 
     //Building Level
-    public int buildinglevel = 0;
+    public int buildinglevel = 1;
 
     //width X axis
     public int width = 0;
@@ -28,8 +28,8 @@ public class Building
     //Type of functionality of building
     public ResourceType resourceType = ResourceType.None;
 
-    //Type of storage of building
-    public StorageType storageType = StorageType.None;
+    ////Type of storage of building
+    //public StorageType storageType = StorageType.None;
 
     //[HideInInspector]
     public BuildingObject refOfBuilding;
@@ -43,17 +43,16 @@ public class Building
         Stone,
         Metal,
         Energy,
-        Storage
     }
 
-    public enum StorageType
-    {
-        None,
-        Wood,
-        Stone,
-        Metal,
-        Energy
-    }
+    //public enum StorageType
+    //{
+    //    None,
+    //    Wood,
+    //    Stone,
+    //    Metal,
+    //    Energy
+    //}
 
     public enum BuildingType
     {

@@ -368,16 +368,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     buildingID: 1
+    buildinglevel: 0
     width: 1
     length: 1
     yPadding: 1
     buildingModel: {fileID: 4316073185202118455}
-    resourceType: 1
+    buildingType: 2
+    resourceType: 3
     storageType: 0
     refOfBuilding: {fileID: -6736273647446626698}
   resource: 0
   resourceLimit: 100
   generationSpeed: 5
+  levelMultiplier: 1
   canvasObject: {fileID: 4925595757205669371}
   progressSlider: {fileID: 2398527910565476682}
 --- !u!65 &7465681775421479432
