@@ -59,7 +59,7 @@ public class TileObject : MonoBehaviour
 
                 if (canPlaceBuildingHere)
                 {
-                    GameManager.Instance.SpawnBuilding(GameManager.Instance.buildingToPlace, iteratedTiles);
+                    GameManager.Instance.SpawnResourceBuilding(GameManager.Instance.buildingToPlace, iteratedTiles);
 
                     //data.SetOccupied(Tile.ObstacleType.Building);
                 }

@@ -22,6 +22,9 @@ public class Building
     //Visual of the building
     public GameObject buildingModel;
 
+    //Type of Building
+    public BuildingType buildingType = BuildingType.None;
+
     //Type of functionality of building
     public ResourceType resourceType = ResourceType.None;
 
@@ -36,6 +39,10 @@ public class Building
         None,
         Standard,
         Premium,
+        Wood,
+        Stone,
+        Metal,
+        Energy,
         Storage
     }
 
@@ -51,11 +58,11 @@ public class Building
     public enum BuildingType
     {
         None,
-        Wall,
         TownHall,
-        Producer,
-        Tower,
-        Armoury,
-        HeroesAltar
+        Resource,
+        Storage,
+        WeaponmArmoury,
+        RecruitmentCentre,
+        ResearchLab
     }
 }

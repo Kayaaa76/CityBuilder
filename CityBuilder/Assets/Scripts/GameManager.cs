@@ -195,7 +195,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     /// </summary>
     /// <param name="building">Building to place</param>
     /// <param name="tile">Tile to place the building to</param>
-    public void SpawnBuilding(BuildingObject building, List<TileObject> tiles)
+    public void SpawnResourceBuilding(BuildingObject building, List<TileObject> tiles)
     {
         GameObject spawnedBuilding = Instantiate(building.gameObject);
         float sumX = 0;

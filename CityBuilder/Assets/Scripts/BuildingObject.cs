@@ -117,7 +117,7 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
         {
             if(resource < resourceLimit)
             {
-                resource +=  generationSpeed * Time.deltaTime;
+                resource +=  generationSpeed * levelMultiplier * Time.deltaTime;
             }
             else
             {
