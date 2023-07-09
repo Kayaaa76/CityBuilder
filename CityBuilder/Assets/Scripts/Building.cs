@@ -28,6 +28,9 @@ public class Building
     //Type of functionality of building
     public ResourceType resourceType = ResourceType.None;
 
+    //Building Level
+    public BuildingLevel buildingLevel = BuildingLevel.None;
+
     ////Type of storage of building
     //public StorageType storageType = StorageType.None;
 
@@ -63,5 +66,16 @@ public class Building
         WeaponmArmoury,
         RecruitmentCentre,
         ResearchLab
+    }
+
+    public enum BuildingLevel
+    {
+       None,
+       One,
+       Two,
+       Three,
+       Four,
+       Five,
+       Max,
     }
 }

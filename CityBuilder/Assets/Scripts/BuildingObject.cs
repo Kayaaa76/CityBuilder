@@ -34,6 +34,8 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
 
     public GameObject canvasObject;
     public Slider progressSlider;
+    bool upgradeBuilding;
+
 
     Coroutine buildingBehaviour;
 
@@ -63,6 +65,18 @@ public class BuildingObject : MonoBehaviour, IDataPersistence
     {
         gameData.buildingLevel = data.buildinglevel;
     }
+
+    private void TownHallController()
+    {
+        if(data.buildingType == Building.BuildingType.TownHall)
+        {
+            
+
+        }
+        
+
+    }
+
 
     private void OnMouseDown()
     {
