@@ -1,4 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="ResourceContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100px; width: 1900px; position: absolute; left: 10px;" />
+    <Style src="project://database/Assets/Uss/ProgressBar.uss?fileID=7433441132597879392&amp;guid=502109a91d16dfb4399686ef80a304e1&amp;type=3#ProgressBar" />
+    <ui:VisualElement name="ResourceContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100px; width: 1920px; position: absolute; left: 0; margin-left: 0; margin-right: 0; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; align-self: auto; justify-content: space-around; align-items: center; flex-direction: row;">
+        <ui:ProgressBar value="22" title="Wood" name="ProgressBar" class="progressbar" style="width: 200px; height: 20px;" />
+        <ui:ProgressBar value="22" title="Stone" class="progressbar" style="position: relative; flex-direction: column;" />
+        <ui:ProgressBar value="22" title="Metal" class="progressbar" />
+        <ui:ProgressBar value="22" title="Energy" class="progressbar" />
+    </ui:VisualElement>
     <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 150px; flex-basis: auto; align-items: auto; justify-content: space-around; width: 500px; align-self: flex-end; position: absolute; bottom: 0;" />
 </ui:UXML>

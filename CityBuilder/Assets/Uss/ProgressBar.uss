@@ -1,0 +1,5 @@
+.progressbar {
+    left: 0;
+    width: 200px;
+    height: 20px;
+}
